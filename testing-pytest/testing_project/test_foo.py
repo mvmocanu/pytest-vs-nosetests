@@ -2,10 +2,6 @@ import mock
 from .foo import multiply
 
 
-def caca():
-    return 'pipi'
-
-
 @mock.patch('testing_project.foo.add')
 def test_add(mocked, client):
     mocked.return_value = 44
