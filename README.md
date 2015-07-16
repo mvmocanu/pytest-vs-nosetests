@@ -2,6 +2,11 @@
 
 This is an example of how tests are written using two different test runners. We have two identical projects. The only difference is that one is using nosetest runner to run the tests, the other one is using pytest runner. 
 
+We can use a diff tool to see all the diferences between the two projects. For example `meld`:
+~~~~
+$ meld testing-nosetests testing-pytest
+~~~~
+
 ### How to Install 
 
 In order to run the tests, we need two virtual environments - one for each project. Each project has it's own requirements.txt. After the virtual environemnt is created, the requirements must be installed.
@@ -23,7 +28,7 @@ $ source ve/bin/activate
 $ pip install -r requirements.txt
 ~~~~~~
 
-### How to run
+### How to run the tests
 
 * testing-nosetests:
 ~~~~~~
