@@ -8,4 +8,4 @@ def test_add(mocked, client):
     assert 88 == multiply(2, 4)
     assert mocked.called
     x = client.get('/')
-    assert x.status_code == 400
+    assert x.status_code == 200
